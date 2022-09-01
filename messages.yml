@@ -1,0 +1,74 @@
+# SuperVanish v6.2.11 - Messages
+#
+# Information:
+# <..> means that .. is required; [..] means that .. is optional and can be left out; | inside [] or <> stands for 'OR'
+# You can use the & character for color codes; Example: '&cThe color of this text would be red!'
+# You can use #XXXXXX for HEX color codes. Example: '#663EF6This text would be purple!'
+# You can use %p% to get the player's name; Example: '&4&l%p%, you aren't allowed to execute this command!'
+# You can use %other% to get the name of the target or cause
+# You can use %d% to get the player's display name; if you use Essentials then the display name contains the prefix too
+# You can use %tab% to get the player's name in the player list (TAB)
+# You can use %prefix% to get the player's prefix (Requires Vault)
+# You can use %suffix% to get the player's suffix (Requires Vault)
+# You can use %group% to get the player's group (Requires Vault)
+# You can use %nick% to get the player's nickname (Requires Essentials)
+# Some messages allow different, unique variables too
+#
+# NOTE: You can get WAY more placeholders by installing PlaceholderAPI or MVdWPlaceholderAPI
+#
+# Empty messages will not be sent
+# Using \n starts a new line
+#
+# Important:
+# You must double single quotes if you want to use them inside a message.
+# You must NOT use any tab characters inside this file (indent key) otherwise YAML will spam your console with errors!
+# !! If there are errors in the console after editing this file paste it into an online YAML parser to see if
+# there are any YAML syntax errors !!
+Messages:
+  NoPermission: '&4アクセスが拒否されました！ あなたはこれを行うことはできません。'
+  InvalidUsage: '&c無効な使い方です。 コマンドの一覧は &6/sv help&c コマンドで見ることができます。'
+  VanishMessage: '&e%p%がゲームから退出しました'
+  ReappearMessage: '&e%p%がゲームに参加しました'
+  VanishMessageWithPermission: '&a[SV] %p% がVanishモードになりました'
+  ReappearMessageWithPermission: '&a[SV] %p% がVanishモードを解除しました'
+  OnVanish: '&aあなたは現在透明になっています'
+  OnReappear: '&aあなたは他のプレイヤーから見えるようになりました'
+  OnVanishCausedByOtherPlayer: '&a%other% があなたを透明状態にしました'
+  OnReappearCausedByOtherPlayer: '&a%other% があなたを見えるようにしました'
+  AlreadyVanishedError: '&cあなたは既に透明状態です'
+  NotVanishedError: '&cあなたは既に見えています'
+  SilentJoinMessageForAdmins: '&a[SV] %p% が参加しました(サイレント)'
+  SilentQuitMessageForAdmins: '&a[SV] %p% が退出しました(サイレント)'
+  SilentDeathMessage: '&a[SV] %deathmsg%'
+  RemindingMessage: '&aあなたはまだ透明状態です'
+  ListMessagePrefix: '&aVanish中のプレイヤー:&f %l'
+  ActionBarMessage: '&aあなたは他のプレイヤーからは見えません'
+  HideOtherMessage: '&e%other%&a は現在透明状態です！'
+  ShowOtherMessage: '&e%other%&a が見えるようになりました'
+  CannotHideOtherPlayer: '&cあなたは %other%'' のVanishモードを変更することはできません'
+  AlreadyInvisibleMessage: '&e%other%&c は既に透明状態です！'
+  AlreadyVisibleMessage: '&e%other%&c は既に見えています！'
+  PluginReloaded: '&aSuperVanish を再読み込みしました (%time%ms)！'
+  InvalidSender: '&cこのコマンドを実行するにはプレイヤーである必要があります！'
+  PlayerNotOnline: '&cそのプレイヤーはオフラインです！'
+  PlayerNonExistent: '&cそのプレイヤーは存在しません！'
+  ToggledPickingUpItemsOn: '&eアイテムを拾えるようにしました'
+  ToggledPickingUpItemsOff: '&eアイテムを拾えないようにしました'
+  UpdateWarning: '&c警告！ %updates% を再生成すると %changes% がリセットされます。 続行するには &e/sv recreatefiles confirm&c を実行してください'
+  RecreatedConfig: '&a%updates%の再生成に成功しました！ %changes%を確認してください'
+  NoConfigUpdateAvailable: '&e設定ファイルは最新です'
+  RecreationRequiredMsg: '&c[SV] Your SuperVanish-files are not up to date, you can use &e/sv recreatefiles&c to recreate them
+  or use /sv recreatefiles dismiss to dismiss this message.
+  Recreating SuperVanish''s files gives you access to newer settings and features of the plugin.'
+  DismissedRecreationWarning: '&eYou are no longer receiving notifications about this recreation.'
+  UndismissedRecreationWarning: '&eYou are now receiving notifications about this recreation.'
+  PrintedStacktrace: '&eスタックトレースの作成に成功しました！ コンソールをご覧ください。'
+  EntityHitDenied: '&c[SV] vanish宙にプレイヤーやモブを殴ることはできない！'
+  BlockPlaceDenied: '&c[SV] Vanish中はブロックが置けない！'
+  BlockBreakDenied: '&c[SV] Vanish中はブロックが壊せない！'
+  PluginOutdated: '&c[SV] 過去のバージョンのプラグインが実行されています。 新バージョン: ''%new%''; 古いバージョン: ''%current%'''
+  DynmapFakeJoin: '%d% joined'
+  DynmapFakeQuit: '%d% quit'
+  HelpHeader: "&a<---------------&e SuperVanish-Help &a--------------->"
+  HelpFormat: "&6%usage% &7- &b%description% &c(%permission%)"
+MessagesVersion: 6.2.11
